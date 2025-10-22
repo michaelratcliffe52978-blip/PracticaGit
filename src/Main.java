@@ -12,4 +12,8 @@ public class Main {
             System.out.println("i = " + i);
         }
     }
+    public static void funcion1() {
+        System.out.println("funcion1");
+    }
+
 }

@@ -24,5 +24,17 @@ public class Main {
         System.out.println("Escribeme una cadena de caracteres: ");
         cadena = sc.nextLine();
     }
+    public static void VisualizarCadena(){
+        if (cadena==null || cadena.isEmpty()) {
+            System.out.println("La cadena esta vacia");
+            SolicitarCadena(); //salir del metodo
+        }
+
+        System.out.println("Dada la cadena: '" + cadena + "' ¿De que posición quieres ver el caracter?");
+        int posicion = sc.nextInt();
+        char caracter = cadena.charAt(posicion-1);
+        System.out.println("El caracter es: " + caracter);
+
+    }
 
 }

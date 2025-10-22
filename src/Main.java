@@ -1,6 +1,10 @@
+import java.util.Scanner;
+
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
+    private static Scanner sc = new Scanner(System.in);
+    private static String cadena;
     public static void main(String[] args) {
         //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
         // to see how IntelliJ IDEA suggests fixing it.
@@ -14,6 +18,11 @@ public class Main {
     }
     public static void funcion1() {
         System.out.println("funcion1");
+    }
+
+    public static void SolicitarCadena(){
+        System.out.println("Escribeme una cadena de caracteres: ");
+        cadena = sc.nextLine();
     }
 
 }
